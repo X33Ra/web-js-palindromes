@@ -19,8 +19,13 @@ describe("Palindromes", function() {
   });
   
   it("should return false if a phrase is NOT a palindrome", function() {
-    const phrase = "this is not a palindrome"
+    const phrase = "this is not a palindrome";
     assert.isFalse(isPalindrome(phrase));
   });
 });
 
+// should return true if a phrase is a palindrome
+it("should return true if a phrase is a palindrome", function() {
+  const phrase = "a man a plan a canal panama";
+  assert.isTrue(isPalindrome(phrase));
+});
